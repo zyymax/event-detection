@@ -1,0 +1,15 @@
+[Main Entry]
+run_burst*.sh:	extract bursty features of tokens
+run_cooccur.sh:	build cooccurence-matrix of top-K bursty tokens and process graph partition by metis
+
+[Important Scripts]
+webcontent_filter.sh:	preprocess, filtering characters
+tokens.py:	tokenization Chinese text by jieba
+extract_words.py(streaming):	count top K words from stdin
+get_word_distribution.py(streaming):	get distribution of each word in the given word_dict in different lines
+statistic_word.py(streaming):	calculate expectation, variance and other statistics of word distribution
+token2num.py(streaming):	turn tokens into numbers with word dict
+build_cooccur_matrix.py:	turn co-occurrence into jeccard-coefficient co ==> co*max_df/(a_df+b_df-co); Build input graph file of gpmetis
+knn_keywords.py:	generate K nearest neighbours of keywords by setting K / threshold
+part2token.py:	turn partition file of metis to token clustering
+page_*.sh:	data format related
