@@ -7,4 +7,4 @@ Date:	2014-05-15
 
 Desc:	Tools to detect EVENT-keywords and describe event with word-graph
 
-Depend:	metis-5.1.0, jieba, numpy
+Depend:	[metis-5.1.0](http://glaros.dtc.umn.edu/gkhome/metis/metis/download), jieba, numpy
