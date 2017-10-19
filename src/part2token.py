@@ -18,7 +18,7 @@ with open(sys.argv[1]) as ins:
     for line in ins:
         # Line: word occur burst
         word = line.split()[0]
-        value = line.split()[2]
+        value = line.split()[1]
         word_list.append((float(value), word))
 cluster_list = collections.defaultdict(list)
 for lineid, line in enumerate(sys.stdin):

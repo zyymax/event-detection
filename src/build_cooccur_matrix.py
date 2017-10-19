@@ -60,11 +60,9 @@ for idxi, listi in enumerate(co_matrix[:real_v_size][:real_v_size]):
             jc = dataj*max_df/diff_occur
         # Jeccard coefficient
         if int(jc) > 0:
+            # Co-occurrence
             line_list.extend([str(idxj+1), str(int(jc))])
             n_edge += 1
-        # Co-occurrence
-        #line_list.extend([str(idxj+1), str(int(dataj))])
-        n_edge += 1
         co_matrix[idxi][idxj] = dataj/diff_occur
     lines_list.append(' '.join(line_list))
 lines_list.insert(0, '%s %s 001' % (len(lines_list), n_edge/2))

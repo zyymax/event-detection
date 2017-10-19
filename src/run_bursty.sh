@@ -1,7 +1,7 @@
 #!/bin/bash
 # Batch process of building bursty feature
 
-data_path='data/sample'
+data_path='data/'
 time_prefix='0317-0324'
 # Filter and tokenization
 # Build word dict
