@@ -46,4 +46,6 @@ echo '4.生成词图...'
 cat $tokennum_file | src/build_cooccur_matrix.py $keywords_size > $gpinput_file
 gpmetis $gpinput_file $graph_size > $gpinput_file.part.$graph_size.log
 cat $gpinput_file.part.$graph_size | src/part2token.py $dict_file > $graph_file
+echo '5.绘制词云...'
+cat $graph_file | src/show_graph.py
 cat $graph_file

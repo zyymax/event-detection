@@ -24,6 +24,6 @@ for line in sys.stdin:
         else:
             line_filter_data.append(u' ')
     filter_data.append(u''.join(line_filter_data))
-word_dict = collections.Counter(u' '.join(filter_data).split())
+word_dict = collections.Counter([word for word in u' '.join(filter_data).split() if len(word) > 1])
 for word, count in word_dict.most_common(topK):
     print '%s:%s' %(word.encode('utf8'), count)
