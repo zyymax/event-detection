@@ -1,3 +1,13 @@
+2017-10-19更新:
+［批量执行］
+launch.sh: 将文档文件(一行代表一个文档内容)转换为词图
+           使用方法：
+           src/launch.sh <content_file> <stopword_file> <keywords_size> <gragh_size>
+           content_file: 中文文本文件(一行代表一个文档)
+           stopword_file: 默认在data/stopwords.txt
+           keywords_size: 抽取的topk单词个数
+           graph_size: 生成的词图个数
+
 [Main Entry]
 run_burst*.sh:	extract bursty features of tokens
 run_cooccur.sh:	build cooccurence-matrix of top-K bursty tokens and process graph partition by metis
